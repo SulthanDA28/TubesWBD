@@ -1,0 +1,11 @@
+.env*
+node_modules
+dist
+database
+
+.git*
+docs
+
+# mounted files need not be copied during image build
+index.ts
+src

@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url("/public/assets/background.jpg") no-repeat;
+    background-size: cover;
+
+}
+.tepi {
+    position: relative;
+    width: 400px;
+    height: 440px;
+    background: #fff;
+    border: 2px solid #e6e6e6;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    overflow: hidden;
+
+}
+
+.tepi .isi-box {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 40px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.tepi .isi-box.register{
+    position: absolute;
+    transition: none;
+    transform: translateX(400px);
+}
+.tepi.ganti .isi-box.register{
+    transition: transform 0.20s ease-in-out;
+    transform: translateX(0);
+}
+
+.tepi .isi-box.login{
+    transition: transform 0.20s ease-in-out;
+    transform: translateX(0);
+}
+.tepi.ganti .isi-box.login{
+    transition: none;
+    transform: translateX(-400px);
+}
+
+
+.input-box{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    border-bottom: 2px solid #adadad;
+    margin: 30px 0;
+}
+
+.input-box label{
+    position: absolute;
+    top:50%;
+    left: 5px;
+    color: #adadad;
+    transform: translateY(-50%);
+    font-size: 1em;
+    font-weight: 500;
+    pointer-events: none;
+
+
+}
+.input-box input{
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 0 35px 0 5px;
+    font-size: 1.1em;
+    font-weight: 500;
+    color: #333;
+}
+
+.input-box .icon{
+    position: absolute;
+    right: 8px;
+    font-size: 1.2em;
+    color: #adadad;
+    line-height: 57px;
+}
+.input-box input:focus ~ label,
+.input-box input:valid ~ label{
+    top: -5px;
+    left: 0;
+    color: #03a9f4;
+    font-size: 0.8em;
+    font-weight: 600;
+    transition: .3s;
+}
+.tmbllogin{
+    width: 100%;
+    height: 40px;
+    border: none;
+    outline: none;
+    background: #03a9f4;
+    color: #fff;
+    font-size: 1.2em;
+    font-weight: 500;
+    border-radius: 25px;
+    cursor: pointer;
+    margin: 10px 0;
+}
+.register{
+    text-align: center;
+    font-size: 0.8em;
+    font-weight: 500;
+    color: #000000;
+}

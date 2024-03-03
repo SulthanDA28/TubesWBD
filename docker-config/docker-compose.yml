@@ -1,0 +1,51 @@
+services:
+  # PHP App
+  php-web:
+    extends:
+      file: ../php-app/docker-compose.yml
+      service: php-web
+    env_file: .env
+
+  php-postgres:
+    extends:
+      file: ../php-app/docker-compose.yml
+      service: php-postgres
+    env_file: .env
+
+  # SPA
+  spa-web:
+    extends:
+      file: ../client-spa/docker-compose.yml
+      service: spa-web
+    env_file: .env
+
+  # REST Service
+  rest-service:
+    extends:
+      file: ../rest-service/docker-compose.yml
+      service: rest-service
+    env_file: .env
+
+  rest-db:
+    extends:
+      file: ../rest-service/docker-compose.yml
+      service: rest-db
+    env_file: .env
+
+  # SOAP Service
+  soap-service:
+    extends:
+      file: ../soap-service/docker-compose.yml
+      service: soap-service
+
+  soap-db:
+    extends:
+      file: ../soap-service/docker-compose.yml
+      service: soap-db
+
+  # PostgreSQL pgAdmin panel accessible at http://localhost:16543/
+  # pgadmin-compose:
+  #   image: dpage/pgadmin4
+  #   env_file: .env
+  #   ports:
+  #     - "16543:80"

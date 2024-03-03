@@ -1,0 +1,204 @@
+.judul{
+    font-size: 20px;
+    font-weight: bold;
+    color: #ffffff;
+    margin-bottom: 10px;
+    position: relative;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #000;
+    justify-content: center;
+    font-style: italic;
+    text-align: center;
+}
+body{
+    /* display: flex; */
+    background: url("/public/assets/background.jpg") no-repeat;
+    background-size: cover;
+
+}
+.kotak{
+    height: 100%;
+    width: 100%;
+}
+.isikotak{
+    position: relative;
+    width: 580px;
+    height: 580px;
+    background-color: #fff;
+    padding: 5px;
+    border-radius: 10px;
+    margin: 6% auto;
+    display: flex;
+    flex-direction: column; /* Mengatur tata letak menjadi kolom */
+    align-items: stretch;
+    box-shadow: 0px 0px 10px 10px #951fa0;
+    overflow-y: auto;
+}
+.tombol{
+    width: 230px;
+    margin : 45px auto;
+    box-shadow: 0px 0px 10px 10px #40e340;
+    border-radius:30px ;
+    position: relative;
+}
+.tombolpindah{
+    padding: 10px 40px;
+    cursor: pointer;
+    background: transparent;
+    border: 0;
+    outline: none;
+    position: relative;
+}
+
+.input{
+    top: 10px;
+    position: absolute;
+    transition: .6s;
+    width: 480px;
+    border: 3px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+    overflow: auto;
+    border-radius: 10px;
+    border-bottom: #ce9f9f;
+}
+
+#ban{
+    left: 50px;
+}
+
+.person {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    flex-direction: column;
+}
+
+.person button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+.person button:hover {
+    background-color: #0056b3;
+}
+
+.nam{
+    font-size: 20px;
+    font-weight: bold;
+    color: #000;
+    margin-bottom: 10px;
+    position: relative;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #000;
+    justify-content: center;
+    font-style: italic;
+    text-align: center;
+}
+
+.name {
+    width: 450px; /* Sesuaikan dengan lebar yang Anda inginkan */
+    max-height: 2em; /* Sesuaikan dengan tinggi maksimum yang Anda inginkan */
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    flex-direction: column;
+}
+
+.username{
+    width: 450px; /* Sesuaikan dengan lebar yang Anda inginkan */
+    max-height: 2em; /* Sesuaikan dengan tinggi maksimum yang Anda inginkan */
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    flex-direction: column;
+}
+
+.tmbltobaned{
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.tmbltoban{
+    position: relative;
+    width: 280px;
+    height: 30px;
+    background-color: transparent;
+    padding: 5px;
+    border-radius: 10px;
+    margin: 6% auto;
+    /* overflow: hidden; */
+    display: flex;
+    flex-direction: column; /* Mengatur tata letak menjadi kolom */
+    align-items: stretch;
+}
+
+.opsi{
+    font-size: 20px;
+    font-weight: bold;
+    color: #ffffff;
+    margin-bottom: 10px;
+    position: relative;
+    padding-bottom: 10px;
+    justify-content: center;
+    font-style: italic;
+    text-align: center;
+}
+.dropdowntempat #dropdown{
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+.dropdowntempat #sort{
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+.dropdowntempat{
+    position: relative;
+    width: 280px;
+    height: 30px;
+    background-color: transparent;
+    padding: 5px;
+    border-radius: 10px;
+    margin: 6% auto;
+    /* overflow: hidden; */
+    display: flex;
+    flex-direction: column; /* Mengatur tata letak menjadi kolom */
+    align-items: stretch;
+}
+
+.inputnama{
+    position: absolute;
+    transition: .6s;
+    width: 250px;
+    border: 3px solid #ccc;
+    padding: 10px;
+    overflow: auto;
+    border-radius: 10px;
+    border-bottom: #ce9f9f;
+}
+.tmbltologout{
+    background-color: #FF0000;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 10px;
+}

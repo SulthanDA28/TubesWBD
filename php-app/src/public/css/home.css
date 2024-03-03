@@ -1,0 +1,238 @@
+.post {
+    display: flex;
+    border-bottom: 1px solid #e6ecf0;
+    margin-bottom: 2px;
+    padding: 10px 15px;
+}
+
+.post:hover {
+    background: rgba(0, 0, 0, 0.03);
+    cursor: pointer;
+}
+
+.post a {
+    color: #1b94e0;
+    text-decoration: none;
+}
+
+.post a:hover {
+    text-decoration: underline;
+}
+
+.post__author-logo {
+    width: 49px;
+    height: 49px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.post__header {
+    display: flex;
+}
+
+.list-post {
+    justify-content: right;
+    position: absolute;
+    top: 10%;
+    left: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box {
+    border: 2px solid #333;
+    padding: 20px;
+    max-width: 600px;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+    word-wrap: break-word; 
+    overflow: hidden;
+    border-radius: 20px;
+}
+.box-iden {
+    border: 2px solid #333;
+    padding: 20px;
+    max-width: 600px;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+    word-wrap: break-word; 
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+img {
+    max-width: 100%;
+    border-radius: 20px;
+}
+.fotoprofil{
+    border-radius: 100%;
+    width: 100px;
+    height: 100px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    float: left;
+
+}
+.iden{
+    display: flex;
+    word-wrap: break-word; 
+    overflow: hidden;
+    max-width: 100%;
+    border-bottom: 1px solid #333;
+}
+.iden-post{
+    display: flex;
+    word-wrap: break-word; 
+    overflow: hidden;
+    max-width: 100%;
+    border-bottom: 1px solid #333;
+}
+.iden:hover{
+    cursor: pointer;
+}
+.isitext:hover{
+    cursor: pointer;
+}
+.kolom{
+    display: flex;
+    flex-direction: column;
+    word-wrap: break-word; 
+    overflow: hidden;
+    max-width: 100%;
+}
+.pagination ul{
+    display: flex;
+    background: #533451;
+    padding: 8px;
+    border-radius: 50px;
+}
+.pagination ul li{
+    color: #fff;
+    list-style: none;
+    line-height: 45px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: all 0.3s ease-in-out;
+}
+.pagination ul li.numb{
+    height: 45px;
+    width: 45px;
+}
+.pagination ul li.btn{
+    padding: 0 20px;
+
+}
+.pagination ul li.prev{
+    border-radius: 25px 5px 5px 25px;
+
+}
+.pagination ul li.next{
+    border-radius: 5px 25px 25px 5px;
+
+}
+.pagination ul li.numb:hover{
+    background: #1b94e0;
+    color: #fff;
+}
+.pagination ul li.btn:hover{
+    background: #1b94e0;
+    color: #fff;
+}
+.pagination ul li.dots{
+   font-size: 22px;
+   cursor: default;
+
+}
+.pagination ul li.active
+{
+    background-color: #1b94e0;
+}
+.pagination{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.kosong{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+
+    font-weight: 600;
+    color: #fff;
+}
+.like-button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.share-button {
+    padding: 10px 20px;
+    background-color: #3b5998;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+.like-button:hover, .share-button:hover {
+    background-color: #0056b3;
+}
+
+.like-button:focus, .share-button:focus {
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.like-button, .share-button {
+    text-align: center;
+}
+
+.like-button i, .share-button i {
+    margin-right: 5px; 
+}
+
+.button-container {
+    display: flex;
+    align-items: center;
+}
+
+.input-reply{
+    margin-top: 20px;
+}
+.input-reply input{
+    padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 20px;
+      margin-right: 5px;
+      width: 570px;
+      height:50px;
+      box-sizing: border-box;
+}
+.input-reply button{
+    padding: 10px;
+    background-color: rgb(76, 83, 175);
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    height: 50px;
+    width: 70px;
+}
+.input-reply button:hover{
+    background-color: #6545a0;
+}
